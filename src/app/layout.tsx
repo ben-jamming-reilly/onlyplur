@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Micro_5, Jersey_10 } from "next/font/google";
+import { Jersey_10 } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+
 import "./globals.css";
 
-const micro = Jersey_10({ subsets: ["latin"], weight: "400" });
+const jersey = Jersey_10({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "only plur",
@@ -16,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={micro.className}>{children}</body>
+      <body className={jersey.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
