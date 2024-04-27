@@ -9,6 +9,7 @@ const jersey = Jersey_10({ subsets: ["latin"], weight: "400" });
 export const metadata: Metadata = {
   title: "only plur",
   description: "Peace Love Unity Respect",
+  icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
 export default function RootLayout({
