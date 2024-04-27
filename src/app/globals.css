@@ -3,20 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --darker-grey: #161616;
+  --green: #00fca4;
+  --dark-grey: #303030;
+  --light-grey: #e6e6e6;
+  --violet: #6932ff;
+  --pink: #ff0069;
 }
 
-/* body {
+body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+  background: #161616;
+}
 
 @layer utilities {
   .text-balance {
